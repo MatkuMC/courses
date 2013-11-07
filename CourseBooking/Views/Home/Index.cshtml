@@ -19,25 +19,25 @@
         <h5><a href="@Url.Action("Index", "Courses")">View the course catalog</a></h5>
         <p>If it aint there we'll write it :-)</p>
     </li>
-    <li class="two">
+    <!--<li class="two">
         <h5>Search for a course by number</h5>
-        <form action="@Url.Action("ByNumber", "Courses")" method="get">
+        <form action="@Url.Action("Show", "Courses")" method="get">
             <input type="text" name="number" maxlength="4" value="AB12"/>
             <input type="submit" value="Search"/>
         </form>
-    </li>
-    <li class="three">
-        <h5>Search for a course by keyword</h5>
+    </li>-->
+    <li class="two">
+        <h5>Search for a course</h5>
         <form action="@Url.Action("ByKeyword", "Courses")" method="get">
             <input type="text" name="keyword" maxlength="10" value="Intro" />
             <input type="submit" value="Search" />
         </form>
     </li>
-    <li class="four">
+    <li class="three">
         <h5><a href="@Url.Action("New", "Courses")">Add a new course</a></h5>
         <p>We build to your requirements...</p>
     </li>
-    <li class="five">
+    <li class="four">
         <h5>Working with deliveries</h5>
         <p>Your code goes here...</p>
     </li>

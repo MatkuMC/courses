@@ -25,7 +25,6 @@ namespace CourseBooking.Controllers {
 
             return View(course);
         }
-
         public ActionResult ByKeyword(string keyword) {
             var courses = dao.GetCoursesContainingText(keyword);
 

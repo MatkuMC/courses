@@ -37,7 +37,7 @@ namespace CourseBooking.DataAccess {
         }
 
         public IList<TrainingCourse> GetCoursesContainingText(string text) {
-            throw new NotImplementedException();
+           return Courses.Where(x => x.Title.Contains(text) || x.Number.Contains(text) || x.Type.Contains(text)).ToList(); 
         }
     }
 }
